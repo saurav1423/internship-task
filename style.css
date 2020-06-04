@@ -298,3 +298,72 @@ a {
 		width: 300px;
 	}
 }
+
+.cool-b4-form .btn {
+	border-radius: 0;
+}
+.cool-b4-form .form-group {
+	position: relative;
+	padding-top: 20px;
+	margin-bottom: 0;
+}
+.cool-b4-form .form-group:first-child:last-child {
+	height: 100%;
+}
+.cool-b4-form .form-group:first-child:last-child .form-control {
+	height: 100%;
+}
+.cool-b4-form .form-group textarea {
+	resize: none;
+}
+.cool-b4-form .form-group .input-highlight {
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #e03443;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	transition: width 0.4s ease;
+}
+.cool-b4-form .form-group label {
+	position: absolute;
+	left: 10px;
+	top: 25px;
+	transition: all 0.4s ease;
+}
+.cool-b4-form .form-group .form-control {
+	border-radius: 0;
+	border-width: 0 0 2px 0;
+}
+.cool-b4-form .form-group .form-control:focus,
+.cool-b4-form .form-group .form-control.hasValue {
+	box-shadow: none;
+	border-color: #ced4da;
+}
+.cool-b4-form .form-group .form-control:focus ~ .input-highlight,
+.cool-b4-form .form-group .form-control.hasValue ~ .input-highlight {
+	width: 100%;
+}
+.cool-b4-form .form-group .form-control:focus ~ label,
+.cool-b4-form .form-group .form-control.hasValue ~ label {
+	transform: scale(0.7);
+	top: 0;
+	left: 0;
+}
+.wrap {
+	margin-top: 35px;
+
+	background: #fbc8d4;
+	height: 420px;
+}
+
+.accordion .card-header:after {
+	font-family: 'FontAwesome';
+	content: '\f068';
+	float: right;
+}
+.accordion .card-header.collapsed:after {
+	/* symbol for "collapsed" panels */
+	content: '\f067';
+}
