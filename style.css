@@ -367,3 +367,9 @@ a {
 	/* symbol for "collapsed" panels */
 	content: '\f067';
 }
+.story-content > h3 {
+	font-family: 'Roboto Slab', serif;
+}
+.collapsed > a {
+	font-family: 'Roboto Slab', serif;
+}
